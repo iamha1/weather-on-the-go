@@ -18,3 +18,7 @@ background-color: red;
 padding: 4px 8px 4px 8px;
 border-radius: 20px;
 }
+
+.smallLead {
+    font-size: 14px;
+}

@@ -1,44 +1,26 @@
-# 06 Server-Side APIs: Weather Dashboard
+# About Weather-on-the-go
+This is a weather dashboard that show you the current weather a city. It also includes the 5-day forecast and a saved history of other cities that you've looked into. The dashboard shows the temperature, humidity, windspeed and UV Index. The UV index is hilighted in different colors to represent the safety/danger of the UV conditions.
 
-Developers are often tasked with retrieving data from another application's API and using it in the context of their own. Third-party APIs allow developers to access their data and functionality by making requests with specific parameters to a URL. Your challenge is to build a weather dashboard that will run in the browser and feature dynamically updated HTML and CSS.
+## Layout of weather-on-the-go:
+![weather-on-the-go](Assets/weather-on-the-go.jpg)
 
-Use the [OpenWeather API](https://openweathermap.org/api) to retrieve weather data for cities. The documentation includes a section called "How to start" that will provide basic setup and usage instructions. Use `localStorage` to store any persistent data.
+## Description
 
-## User Story
+- Layout of the calendar using Bootstrap templates. There 3 three important elements on the dashboard: (1) the saves history of different cities we search for weather. (2) The main weather display of a city with temperature, humidity, windspeed and UV Index. The UV index is hilighted in different colors to represent the safety/danger of the UV conditions.
+- Making the Save area clickable and savable with on.(click) and localStorage. 
+- Also use fontawesome for the save icon for the 5-day forecast.
+- Adding color coded for different time UV Index of favorable, moderate and severe.
+- Adding current time, using Moment.js.
 
-```
-AS A traveler
-I WANT to see the weather outlook for multiple cities
-SO THAT I can plan a trip accordingly
-```
+## Link to weather-on-the-go: 
 
-## Acceptance Criteria
+https://github.com/iamha1/weather-on-the-go
 
-```
-GIVEN a weather dashboard with form inputs
-WHEN I search for a city
-THEN I am presented with current and future conditions for that city and that city is added to the search history
-WHEN I view current weather conditions for that city
-THEN I am presented with the city name, the date, an icon representation of weather conditions, the temperature, the humidity, the wind speed, and the UV index
-WHEN I view the UV index
-THEN I am presented with a color that indicates whether the conditions are favorable, moderate, or severe
-WHEN I view future weather conditions for that city
-THEN I am presented with a 5-day forecast that displays the date, an icon representation of weather conditions, the temperature, and the humidity
-WHEN I click on a city in the search history
-THEN I am again presented with current and future conditions for that city
-```
+## Reference: 
+- Bootstrap: https://getbootstrap.com/
+- Moment Js: https://momentjs.com/
+- Stackoverflow: https://stackoverflow.com/
+- W3 School: https://www.w3schools.com/default.asp
+- Font Aweseme: https://fontawesome.com/start
+- Open weather APIs: https://openweathermap.org/api
 
-The following image demonstrates the application functionality:
-
-![weather dashboard demo](./Assets/06-server-side-apis-homework-demo.png)
-
-## Review
-
-You are required to submit the following for review:
-
-* The URL of the deployed application.
-
-* The URL of the GitHub repository. Give the repository a unique name and include a README describing the project.
-
-- - -
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
