@@ -64,8 +64,8 @@ function getUVIndex(coords) {
     // Open Weather returns a JSON form
 
   }).then(function (response) {
-    console.log(response)
-    var valueUV = response.value;
+    var valueUV = response[0].value;
+    console.log(response[0].value)
     var el = $("<span>").text(valueUV);
 
     if (valueUV < 3) {
@@ -76,10 +76,9 @@ function getUVIndex(coords) {
       el.addClass("heatIndexRed")
     }
 
-    $("#mainUV").append(el)
+    $("#uvBig").append(el)
 
   })
-  //       
-  //       // Go through the JSON form and pull data from the objects
+
 
 }

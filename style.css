@@ -1,11 +1,20 @@
 .heatIndexGreen {
-  color: green;
+  color: darkgray;
+background-color: lightgreen;
+padding: 4px 8px 4px 8px;
+border-radius: 20px;
 }
 
 .heatIndexYellow {
-  color: yellow;
+  color: black;
+background-color: yellow;
+padding: 4px 8px 4px 8px;
+border-radius: 20px;
 }
 
 .heatIndexRed {
-  color: red;
+  color: black;
+background-color: red;
+padding: 4px 8px 4px 8px;
+border-radius: 20px;
 }
