@@ -5,14 +5,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>weather-on-the-go</title>
-  
+
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
- 
+
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-    <link rel="stylesheet" href="style.css" />
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <link rel="stylesheet" href="style.css" />
 
 </head>
 
@@ -27,16 +27,13 @@
         <section class="navbar navbar-light bg-light">
           <form class="form-inline" id="searchFormButton">
 
-            <input class="form-control mr-sm-2" type="search" id="search" placeholder="Search for a city" aria-label="Search">
+            <input class="form-control mr-sm-2" type="search" id="search" placeholder="Search for a city"
+              aria-label="Search">
             <input class="btn btn-outline-success my-2 my-sm-0" type="submit"></button>
           </form>
-      
-          
-          <ul class="list-group w-100 mt-3" type="search" id="cityChoice">
-             <li class="list-group-item" ></li>
-            <li class="list-group-item"></li>
-            <li class="list-group-item"></li>
-            <li class="list-group-item"></li>
+
+
+          <ul class="list-group w-100 mt-3" type="search" id="pastSearches">
           </ul>
         </section>
 
@@ -46,12 +43,17 @@
         <section class="row">
           <section class="card w-100">
             <section class="card-body col-8">
-              <h3 id="cityBig"><strong>CITY: </strong></h3>
-              <p id="tempBig"><strong>Temperature: </strong></p>
-              <p id="humidBig"><strong>Humidity: </strong></p>
-              <p id="windBig"><strong> Speed: </strong></p>
-              <p id="uvBig"><strong>UV Index: </strong></p>
-           
+              <h3><strong>CITY: </strong><span id="cityBig"></span></h3>
+              <img id="weatherIcon" src="">
+              <h4 id="dateSmall1"><strong>
+                  <p id="currentDay" class="smallLead"></p>
+                </strong></h4>
+
+              <p><strong>Temperature: </strong><span id="tempBig"></span></p>
+              <p><strong>Humidity: </strong><span id="humidBig"></span></p>
+              <p><strong>Wind Speed: </strong><span id="windBig"></span></p>
+              <p><strong>UV Index: </strong><span id="uvBig"></span></p>
+
             </section>
           </section>
         </section>
@@ -60,58 +62,79 @@
         <section class="row mt-3 mr-3 ml-5">
           <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
 
-          
+
 
           <div class="card col-2 mr-3 bg-primary text-white">
-            <h4 id="dateSmall1"> Date: <p id="currentDay" class="smallLead"></p></h4>
-           <i class="far fa-sun text-center"></i>
-           <br>
-           <p id="tempSmall1"><strong>Temp: </strong></p>
-           <p id="humidSmall1"><strong>Humidity: </strong></p>
+            <h4 id="dateSmall2">
+              <p id="currentDayPlus1" class="smallLead"></p>
+            </h4>
+            <img id="weatherIcon1" src="">
+            <br>
+            <p><strong>Temp (°F): </strong></p>
+            <p id="tempSmall1"></p>
+            <p><strong>Humidity (%): </strong></p>
+            <p id="humidSmall1"></p>
             <div class="card-body">
               <p class="card-text">
             </div>
           </div>
 
           <div class="card col-2 mr-3 bg-primary text-white">
-            <h4 id="dateSmall2"> Date: <p id="currentDayPlus1" class="smallLead"></p></h4>
-            <i class="far fa-sun text-center"></i>
+            <h4 id="dateSmall3">
+              <p id="currentDayPlus2" class="smallLead"></p>
+            </h4>
+            <img id="weatherIcon2" src="">
             <br>
-           <p id="tempSmall2"><strong>Temp: </strong></p>
-           <p id="humidSmall2"><strong>Humidity: </strong></p>
-            <div class="card-body">
-              <p class="card-text"></p>
-            </div>
-          </div>
-          
-          <div class="card col-2 mr-3 bg-primary text-white">
-            <h4 id="dateSmall3"> Date: <p id="currentDayPlus2" class="smallLead"></p></h4>
-            <i class="far fa-sun text-center"></i>
-            <br>
-           <p id="tempSmall3"><strong>Temp: </strong></p>
-           <p id="humidSmall3"> <strong>Humidity: </strong></p>
+            <p><strong>Temp (°F): </strong></p>
+            <p id="tempSmall2"></p>
+            <p><strong>Humidity (%): </strong></p>
+            <p id="humidSmall2"></p>
+            <!-- <div id="test1"> HI </div> -->
             <div class="card-body">
               <p class="card-text"></p>
             </div>
           </div>
 
           <div class="card col-2 mr-3 bg-primary text-white">
-            <h4 id="dateSmall4"> Date: <p id="currentDayPlus3" class="smallLead"></p></h4>
-         <i class="far fa-sun text-center"></i>
-         <br>
-           <p id="tempSmall4"><strong>Temp: </strong></p>
-           <p id="humidSmall4"><strong>Humidity: </strong></p>
+            <h4 id="dateSmall4">
+              <p id="currentDayPlus3" class="smallLead"></p>
+            </h4>
+            <img id="weatherIcon3" src="">
+            <br>
+            <p><strong>Temp (°F): </strong></p>
+            <p id="tempSmall3"><strong></strong></p>
+            <p><strong>Humidity (%): </strong></p>
+            <p id="humidSmall3"></p>
             <div class="card-body">
               <p class="card-text"></p>
             </div>
           </div>
 
           <div class="card col-2 mr-3 bg-primary text-white">
-            <h4 id="dateSmall5"> Date: <p id="currentDayPlus4" class="smallLead"></p></h4>
-            <i class="far fa-sun text-center"></i>
+            <h4 id="dateSmall5">
+              <p id="currentDayPlus4" class="smallLead"></p>
+            </h4>
+            <img id="weatherIcon4" src="">
             <br>
-           <p id="tempSmall5"><strong>Temp: </strong></p>
-           <p id="humidSmall5"><strong>Humidity: </strong></p>
+            <p><strong>Temp (°F): </strong></p>
+            <p id="tempSmall4"></p>
+            <p><strong>Humidity (%): </strong></p>
+            <p id="humidSmall4"></p>
+            <div class="card-body">
+              <p class="card-text"></p>
+            </div>
+          </div>
+
+          <div class="card col-2 mr-3 bg-primary text-white">
+            <h4 id="dateSmall5">
+              <p id="currentDayPlus5" class="smallLead"></p>
+            </h4>
+            <img id="weatherIcon5" src="">
+            <br>
+            <p><strong>Temp (°F): </strong></p>
+            <p id="tempSmall5"></p>
+            <p><strong>Humidity (%): </strong></p>
+            <p id="humidSmall5"></p>
             <div class="card-body">
               <p class="card-text"></p>
             </div>
@@ -128,8 +151,5 @@
   <script src="script.js"></script>
 
 </body>
-
-
-
 
 </html>
