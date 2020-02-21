@@ -1,5 +1,5 @@
 # About Weather-on-the-go
-This is a weather dashboard that show you the current weather a city. It also includes the 5-day forecast and a saved history of other cities that you've looked into. The dashboard shows the temperature, humidity, windspeed and UV Index. The UV index is hilighted in different colors to represent the safety/danger of the UV conditions.
+This is a weather dashboard that show you the current weather of a city. It also includes the 5-day forecast and a saved history of other cities that you've looked into. The dashboard shows the temperature, humidity, windspeed and UV Index. The UV index is hilighted in different colors to represent the safety/danger of the UV conditions.
 
 ## Layout of weather-on-the-go:
 ![weather-on-the-go](Assets/weather-on-the-go.jpg)
