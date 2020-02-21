@@ -6,11 +6,9 @@ This is a weather dashboard that show you the current weather of a city. It also
 
 ## Description
 
-- Layout of the calendar using Bootstrap templates. There 3 three important elements on the dashboard: (1) the saves history of different cities we search for weather. (2) The main weather display of a city with temperature, humidity, windspeed and UV Index. The UV index is hilighted in different colors to represent the safety/danger of the UV conditions.
-- Making the Save area clickable and savable with on.(click) and localStorage. 
-- Also use fontawesome for the save icon for the 5-day forecast.
-- Adding color coded for different time UV Index of favorable, moderate and severe.
-- Adding current time, using Moment.js.
+- Layout of the calendar using Bootstrap templates. There 3 three important parts on the dashboard: (1) the saved history of different cities we have searched for weather. (2) The main weather display of a current city with temperature, humidity, windspeed and UV Index. The UV index is hilighted in different colors to represent the safety/danger of the UV conditions.
+- Getting information from the API for weather conditions, UV Index and the icons to represent different weather condition.
+- Two URLs are utilized for this dashboard: one URL for the daily forecast, and the other for 5-day forecast.
 
 ## Link to weather-on-the-go: 
 
